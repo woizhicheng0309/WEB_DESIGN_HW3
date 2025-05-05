@@ -5,7 +5,7 @@ This project is a simple online store website designed to sell Razer gaming prod
 ## Project Structure
 
 ```
-online-store
+WEB_DESIGN_HW3
 ├── assets
 │   ├── css
 │   │   └── styles.css        # CSS styles for the website
@@ -15,11 +15,9 @@ online-store
 │   │   └── razer-deathadder-v3-pro.webp  # Image of Razer DeathAdder V3 Pro
 │   └── js
 │       └── scripts.js        # JavaScript for user login and payment functionality
-├── pages
-│   ├── login.html            # User login page
-│   ├── payment.html          # Payment page for credit card information
-│   └── products.html         # Products listing page
 ├── index.html                # Main entry point of the website
+├── payment.html              # Payment page for credit card information
+├── trolled.html              # "Spooky" page warning about scam websites
 └── README.md                 # Project documentation
 ```
 
