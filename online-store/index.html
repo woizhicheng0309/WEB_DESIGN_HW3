@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Razer Products</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .limited-offer {
+            text-align: center;
+            font-size: 3em; /* Doubled the font size */
+        }
+
+        .limited-offer button {
+            font-size: 1.5em; /* Doubled the button size */
+            padding: 20px 40px; /* Adjusted padding for larger button */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Razer Online Store</h1>
+        <img src="assets/images/razer logo.jpg" alt="Razer Logo" class="razer-logo">
+    </header>
+    <main>
+        <section>
+            <h2>Featured Products</h2>
+            <div class="product">
+                <img src="assets/images/razer barracuda x.webp" alt="Razer Barracuda X">
+                <h3>Razer Barracuda X</h3>
+                <p>Price: 870 TWD</p>
+                <p>Features: Lightweight, Wireless, High-Quality Audio</p>
+            </div>
+            <div class="product">
+                <img src="assets/images/razer blackwidow V4 X.webp" alt="Razer BlackWidow V4 X">
+                <h3>Razer BlackWidow V4 X</h3>
+                <p>Price: 877 TWD</p>
+                <p>Features: Mechanical Keys, RGB Lighting, Durable Design</p>
+            </div>
+            <div class="product">
+                <img src="assets/images/razer deathadder v3 pro.webp" alt="Razer DeathAdder V3 Pro">
+                <h3>Razer DeathAdder V3 Pro</h3>
+                <p>Price: 878 TWD</p>
+                <p>Features: Ergonomic Design, High Precision, Customizable Buttons</p>
+            </div>
+        </section>
+        <section class="limited-offer">
+            <h2>LIMITED TIME OFFER</h2>
+            <p id="countdown">24:00:00</p>
+            <p>BUY ALL THREE ITEMS FOR ONLY 2000 TWD NOW!!!</p>
+            <button onclick="location.href='payment.html'">BUY NOW</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Razer Online Store. All rights reserved.</p>
+    </footer>
+    <script>
+        function startCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            let remainingTime = 24 * 60 * 60; // 24 hours in seconds
+
+            function updateCountdown() {
+                const hours = Math.floor(remainingTime / 3600);
+                const minutes = Math.floor((remainingTime % 3600) / 60);
+                const seconds = remainingTime % 60;
+
+                countdownElement.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+                if (remainingTime > 0) {
+                    remainingTime--;
+                    setTimeout(updateCountdown, 1000);
+                }
+            }
+
+            updateCountdown();
+        }
+
+        document.addEventListener('DOMContentLoaded', startCountdown);
+    </script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

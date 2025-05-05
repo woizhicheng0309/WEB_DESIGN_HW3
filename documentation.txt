@@ -1,0 +1,78 @@
+# Website Theme and Concept
+
+This website is designed as an educational tool to raise awareness about scam websites. The theme revolves around mimicking a legitimate online store, specifically styled after the Razer brand, to demonstrate how scammers might create convincing fake websites. The goal is to teach users to recognize red flags and protect their sensitive information, such as credit card details.
+
+# Website Specifications
+
+## Overview
+The website consists of four main pages:
+1. **Home Page (index.html):** Displays featured products and a limited-time offer.
+2. **Payment Page (payment.html):** Contains a form for entering credit card details.
+3. **Trolled Page (trolled.html):** A "spooky" page that warns users about the dangers of scam websites.
+4. **Assets Folder:** Contains images, CSS, and JavaScript files for styling and functionality.
+
+## Steps to Recreate the Website
+
+### 1. File Structure
+- Create the following folder structure:
+  ```
+  online-store/
+      index.html
+      payment.html
+      trolled.html
+      assets/
+          css/
+              styles.css
+          images/
+              [Add product and logo images here]
+          js/
+              scripts.js
+  ```
+
+### 2. Home Page (index.html)
+- Add a header with the Razer logo and a welcome message.
+- Display three featured products with images, names, prices, and features.
+- Include a "Limited Time Offer" section with a countdown timer and a "Buy Now" button that redirects to the payment page.
+
+### 3. Payment Page (payment.html)
+- Create a form with the following fields:
+  - Bank Name (dropdown selection of Taiwan banks)
+  - Card Number (4 input boxes for 4 digits each)
+  - Expiry Date (2 input boxes for MM/YY)
+  - Card Holder Name
+  - CVV
+  - Delivery Address
+- Add an "Accept Payment" button that redirects to the trolled page.
+
+### 4. Trolled Page (trolled.html)
+- Display a "TROLLED" image and a warning message.
+- Style the page with a spooky theme (e.g., black background, red text, bold fonts).
+
+### 5. Styling (styles.css)
+- Use CSS to style the pages, ensuring proper layout and spacing.
+- Add hover effects for buttons and other interactive elements.
+
+### 6. JavaScript (scripts.js)
+- Implement a countdown timer for the limited-time offer.
+- Add form validation if needed.
+
+# Review and Comparison with the Official Razer Website
+
+### Differences:
+1. **Purpose:**
+   - The official Razer website is a legitimate e-commerce platform for purchasing Razer products.
+   - This website is an educational tool to teach users about scam websites.
+
+2. **Design and Functionality:**
+   - The official Razer website has a polished, professional design with advanced features like user accounts, product filters, and secure payment gateways.
+   - This website has a simpler design and limited functionality, focusing on mimicking a scam website.
+
+3. **Content:**
+   - The official Razer website includes detailed product descriptions, reviews, and support information.
+   - This website includes minimal product details and a "TROLLED" page to emphasize its educational purpose.
+
+4. **Security:**
+   - The official Razer website uses HTTPS and secure payment methods.
+   - This website intentionally lacks security features to simulate a scam website.
+
+By comparing the two, users can better understand the differences between legitimate and scam websites, helping them stay vigilant online.
